@@ -13,14 +13,6 @@ class CarViewModel: ObservableObject {
     @Published var carStatus: CarStatus?
     @Published var speed: Double
     
-    @Published var isSelfDrivingModeEnabled: Bool = false {
-        didSet {
-            print("Self driving toggled: \(isSelfDrivingModeEnabled)")
-        }
-    }
-    private let minSafeDistance: Double = 150.0
-    
-    
     private let carControllable: CarControllable
     
     private var currentTask: Task<Void, Never>? = nil
@@ -113,60 +105,4 @@ class CarViewModel: ObservableObject {
             }
         }
     }
-    
-    func toggleSelfDrivingMode() {
-         isSelfDrivingModeEnabled.toggle()
-        if isSelfDrivingModeEnabled {
-            handleSelfDrivingMode()
-        } else {
-            stop()
-        }
-     }
-    
-    private func handleSelfDrivingMode() {
-          Task {
-              while isSelfDrivingModeEnabled {
-                  guard let currentDistance = carStatus?.ultrasonic.lastDistance else {
-                      try? await Task.sleep(for: .milliseconds(100))
-                      continue
-                  }
-                  
-                  if currentDistance < minSafeDistance {
-                      // Obstacle detected, stop and decide direction
-                      stop()
-                      print("Stop")
-                      try? await determineDirectionToMove()
-                  } else {
-                      moveForward()
-                      print("Move Forward")
-                  }
-                  
-                  try? await Task.sleep(for: .seconds(1))
-              }
-          }
-      }
-      
-      private func determineDirectionToMove() async throws {
-          // Try turning left first
-          moveLeft()
-          print("Move Left")
-          try await Task.sleep(for: .seconds(1))
-          
-          if let leftDistance = carStatus?.ultrasonic.lastDistance, leftDistance >= minSafeDistance {
-              return
-          }
-          
-          // If left didn't work, try turning right
-          moveRight()
-          print("Move Right")
-          try await Task.sleep(for: .seconds(1))
-          
-          if let rightDistance = carStatus?.ultrasonic.lastDistance, rightDistance >= minSafeDistance {
-              return
-          }
-          
-          // If neither direction worked, stop or take another decision
-          stop()
-          print("Stop")
-      }
 }

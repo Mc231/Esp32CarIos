@@ -64,15 +64,7 @@ struct ContentView: View {
             .padding(.top, 16)
            
             Text("PWM Value: \(Int(viewModel.speed))")
-            Button(action: {
-                           viewModel.toggleSelfDrivingMode()
-                       }) {
-                           Text(viewModel.isSelfDrivingModeEnabled ? "Disable Self-Driving Mode" : "Enable Self-Driving Mode")
-                               .padding()
-                               .background(viewModel.isSelfDrivingModeEnabled ? Color.red : Color.green)
-                               .foregroundColor(.white)
-                               .cornerRadius(8)
-                       }
+   
                        .padding(.top, 16)
         }
         .padding() // This will apply system padding around the VStack.
