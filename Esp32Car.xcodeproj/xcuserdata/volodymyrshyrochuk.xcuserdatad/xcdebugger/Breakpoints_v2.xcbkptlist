@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EAAB856E-A149-4ED5-B551-2114CF21C7D8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "998F0E9B-2EBC-4B99-9831-78789EEFEB8B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Esp32Car/BaseUrlProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "provide(baseUrl:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "137AB853-0328-4C8C-8F13-4B65722688CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Esp32Car/ConfigProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getConfigValue(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC559508-AFA2-433F-AE10-ABC34AAEE3E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Esp32Car/WebViewRepresentable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "updateUIView(_:context:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AC559508-AFA2-433F-AE10-ABC34AAEE3E8 - 21582fea29ef428c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Esp32Car.WebViewRepresentable.updateUIView(_: __C.WKWebView, context: SwiftUI.UIViewRepresentableContext&lt;Esp32Car.WebViewRepresentable&gt;) -&gt; ()"
+                  moduleName = "Esp32Car"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/volodymyrshyrochuk/Desktop/Esp32Car/Esp32Car/WebViewRepresentable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  uuid = "AC559508-AFA2-433F-AE10-ABC34AAEE3E8 - 21582fea29ef428c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Esp32Car.WebViewRepresentable.updateUIView(_: __C.WKWebView, context: SwiftUI.UIViewRepresentableContext&lt;Esp32Car.WebViewRepresentable&gt;) -&gt; ()"
+                  moduleName = "Esp32Car"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/volodymyrshyrochuk/Desktop/Esp32Car/Esp32Car/WebViewRepresentable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9EAA4222-8A8E-4C24-8B75-C2B38E017DD0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Esp32Car/WebViewRepresentable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "updateUIView(_:context:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9EAA4222-8A8E-4C24-8B75-C2B38E017DD0 - 21582fea29ef424a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Esp32Car.WebViewRepresentable.updateUIView(_: __C.WKWebView, context: SwiftUI.UIViewRepresentableContext&lt;Esp32Car.WebViewRepresentable&gt;) -&gt; ()"
+                  moduleName = "Esp32Car"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/volodymyrshyrochuk/Desktop/Esp32Car/Esp32Car/WebViewRepresentable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "9EAA4222-8A8E-4C24-8B75-C2B38E017DD0 - 21582fea29ef424a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Esp32Car.WebViewRepresentable.updateUIView(_: __C.WKWebView, context: SwiftUI.UIViewRepresentableContext&lt;Esp32Car.WebViewRepresentable&gt;) -&gt; ()"
+                  moduleName = "Esp32Car"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/volodymyrshyrochuk/Desktop/Esp32Car/Esp32Car/WebViewRepresentable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "464">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48F758CA-347B-4012-ABE1-C351A73D5BBD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Esp32Car/BaseUrlProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "provide(baseUrl:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
