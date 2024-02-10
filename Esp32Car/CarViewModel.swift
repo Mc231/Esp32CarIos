@@ -73,6 +73,26 @@ class CarViewModel: ObservableObject {
         setMotor(request: .init(action: .stop, motor: .both))
     }
     
+//    func moveForward() {
+//        setMotor(request: .init(action: .bckward, motor: .both))
+//    }
+//    
+//    func moveLeft() {
+//        setMotor(request: .init(action: .bckward, motor: .right))
+//    }
+//    
+//    func moveRight() {
+//        setMotor(request: .init(action: .bckward, motor: .left))
+//    }
+//    
+//    func moveBackward() {
+//        setMotor(request: .init(action: .forward, motor: .both))
+//    }
+//    
+//    func stop() {
+//        setMotor(request: .init(action: .stop, motor: .both))
+//    }
+    
     func updateStatus() {
           Task {
               do {
