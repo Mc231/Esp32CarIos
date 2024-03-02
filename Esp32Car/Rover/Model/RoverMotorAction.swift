@@ -1,5 +1,5 @@
 //
-//  CarMotorAction.swift
+//  RoverMotorAction.swift
 //  Esp32Car
 //
 //  Created by Volodymyr Shyrochuk on 29.10.2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CarMotorAction: Int, Codable {
+enum RoverMotorAction: Int, Codable {
     case forward = 0
     case bckward = 1
     case stop = 2

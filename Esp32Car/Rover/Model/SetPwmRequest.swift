@@ -9,5 +9,5 @@ import Foundation
 
 struct SetPwmRequest: Codable {
     let pwm: String
-    let motor: CarMotor
+    let motor: RoverMotor
 }

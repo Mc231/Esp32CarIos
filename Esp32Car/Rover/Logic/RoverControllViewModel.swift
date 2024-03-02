@@ -1,5 +1,5 @@
 //
-//  CarViewModel.swift
+//  RoverControllViewModel.swift
 //  Esp32Car
 //
 //  Created by Volodymyr Shyrochuk on 25.10.2023.
@@ -8,19 +8,19 @@
 import Foundation
 
 @MainActor
-class CarViewModel: ObservableObject {
+class RoverControllViewModel: ObservableObject {
     
-    @Published var carStatus: CarStatus?
+    @Published var carStatus: RoverStatus?
     @Published var speed: Double
     
-    private let carControllable: CarControllable
+    private let carControllable: RoverControllable
     
     private var currentTask: Task<Void, Never>? = nil
     private var pwmTask: Task<Void, Never>? = nil
     private var fetchTask: Task<Void, Never>? = nil
     
     init(speed: Double,
-         carControllable: CarControllable) {
+         carControllable: RoverControllable) {
         self.speed = speed
         self.carControllable = carControllable
         handleStatus()
@@ -30,11 +30,11 @@ class CarViewModel: ObservableObject {
                      baseUrlProvider: BaseUrlProvider = .default,
                      requestBuilder: RequestBuilder = DefaultRequestBuilder(),
                      urlSession: URLSession = .shared) {
-        let httpManager = UrlSessionHttpmManager(
+        let httpManager = UrlSessionHttpManager(
             baseUrlProvider: baseUrlProvider,
             requestBuilder: requestBuilder,
             urlSession: urlSession)
-        let carController = CarController(httpManager: httpManager)
+        let carController = RoverController(httpManager: httpManager)
         self.init(speed: speed, carControllable: carController)
     }
     

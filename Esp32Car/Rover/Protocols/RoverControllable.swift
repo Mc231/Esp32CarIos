@@ -1,5 +1,5 @@
 //
-//  CarControllable.swift
+//  RoverControllable.swift
 //  Esp32Car
 //
 //  Created by Volodymyr Shyrochuk on 29.10.2023.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-protocol CarControllable {
+protocol RoverControllable {
     func setMotor(setMotorRequest: SetMotorRequest) async throws
     func setPWM(setPwmRequest: SetPwmRequest) async throws
-    func fetchStatus() async throws -> CarStatus
+    func fetchStatus() async throws -> RoverStatus
 }

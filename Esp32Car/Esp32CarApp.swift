@@ -12,7 +12,7 @@ import SwiftData
 struct ESP32CarApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RoverContolView()
         }
     }
 }

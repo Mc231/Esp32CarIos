@@ -8,6 +8,6 @@
 import Foundation
 
 struct SetMotorRequest: Codable {
-    let action: CarMotorAction
-    let motor: CarMotor
+    let action: RoverMotorAction
+    let motor: RoverMotor
 }

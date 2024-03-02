@@ -10,21 +10,40 @@
 		9F254AB82AF6CAB500DBC864 /* ConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F254AB72AF6CAB500DBC864 /* ConfigProvider.swift */; };
 		9F254ABA2AF6CD6100DBC864 /* BaseUrlProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F254AB92AF6CD6100DBC864 /* BaseUrlProvider.swift */; };
 		9F773A832AE98AAF00145859 /* Esp32CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773A822AE98AAF00145859 /* Esp32CarApp.swift */; };
-		9F773A852AE98AAF00145859 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773A842AE98AAF00145859 /* ContentView.swift */; };
+		9F773A852AE98AAF00145859 /* RoverContolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773A842AE98AAF00145859 /* RoverContolView.swift */; };
 		9F773A892AE98AB000145859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F773A882AE98AB000145859 /* Assets.xcassets */; };
 		9F773A8C2AE98AB000145859 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F773A8B2AE98AB000145859 /* Preview Assets.xcassets */; };
 		9F773A962AE98AB000145859 /* Esp32CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773A952AE98AB000145859 /* Esp32CarTests.swift */; };
 		9F773AA02AE98AB000145859 /* Esp32CarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773A9F2AE98AB000145859 /* Esp32CarUITests.swift */; };
 		9F773AA22AE98AB000145859 /* Esp32CarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773AA12AE98AB000145859 /* Esp32CarUITestsLaunchTests.swift */; };
 		9F773AAF2AE98B9500145859 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773AAE2AE98B9500145859 /* WebViewRepresentable.swift */; };
-		9FE5DA452AE9949B00493660 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA442AE9949B00493660 /* CarViewModel.swift */; };
-		9FE5DA492AEDB15600493660 /* CarMotorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA482AEDB15600493660 /* CarMotorAction.swift */; };
-		9FE5DA4B2AEDB17000493660 /* CarMotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA4A2AEDB17000493660 /* CarMotor.swift */; };
-		9FE5DA4D2AEDB18800493660 /* CarStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA4C2AEDB18800493660 /* CarStatus.swift */; };
+		9F84013D2B935BED00E959E8 /* DevicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84013C2B935BED00E959E8 /* DevicesListView.swift */; };
+		9F8401422B93623B00E959E8 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401412B93623B00E959E8 /* HttpManager.swift */; };
+		9F8401442B93624E00E959E8 /* UrlSessionHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401432B93624E00E959E8 /* UrlSessionHttpManager.swift */; };
+		9F8401462B93626A00E959E8 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401452B93626A00E959E8 /* RequestBuilder.swift */; };
+		9F8401482B93628500E959E8 /* RequestBuilderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401472B93628500E959E8 /* RequestBuilderError.swift */; };
+		9F84014A2B93629800E959E8 /* DefaultRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401492B93629800E959E8 /* DefaultRequestBuilder.swift */; };
+		9F84014D2B9362C300E959E8 /* HttpManager+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84014C2B9362C300E959E8 /* HttpManager+Additions.swift */; };
+		9F8401502B93632700E959E8 /* EndpointConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84014F2B93632700E959E8 /* EndpointConvertible.swift */; };
+		9F8401522B93634A00E959E8 /* EndpointConvertable+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401512B93634A00E959E8 /* EndpointConvertable+Additions.swift */; };
+		9F8401552B93636E00E959E8 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401542B93636E00E959E8 /* HttpMethod.swift */; };
+		9F8401572B93638000E959E8 /* RequestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401562B93638000E959E8 /* RequestPath.swift */; };
+		9F8401592B93639E00E959E8 /* HttpBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401582B93639E00E959E8 /* HttpBody.swift */; };
+		9F84015B2B9363B000E959E8 /* HttpHeaderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84015A2B9363B000E959E8 /* HttpHeaderValue.swift */; };
+		9F84015D2B9363C100E959E8 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84015C2B9363C100E959E8 /* HttpHeader.swift */; };
+		9F84015F2B93640900E959E8 /* RoverControlEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84015E2B93640900E959E8 /* RoverControlEndpoint.swift */; };
+		9F8401672B9364EE00E959E8 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401662B9364EE00E959E8 /* DeviceType.swift */; };
+		9F8401692B9364FF00E959E8 /* DeviceRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8401682B9364FF00E959E8 /* DeviceRepresentable.swift */; };
+		9F84016B2B93650E00E959E8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84016A2B93650E00E959E8 /* Device.swift */; };
+		9F84016D2B93654A00E959E8 /* DeviceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84016C2B93654A00E959E8 /* DeviceItemView.swift */; };
+		9FE5DA452AE9949B00493660 /* RoverControllViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA442AE9949B00493660 /* RoverControllViewModel.swift */; };
+		9FE5DA492AEDB15600493660 /* RoverMotorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA482AEDB15600493660 /* RoverMotorAction.swift */; };
+		9FE5DA4B2AEDB17000493660 /* RoverMotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA4A2AEDB17000493660 /* RoverMotor.swift */; };
+		9FE5DA4D2AEDB18800493660 /* RoverStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA4C2AEDB18800493660 /* RoverStatus.swift */; };
 		9FE5DA4F2AEDB1AA00493660 /* SetMotorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA4E2AEDB1AA00493660 /* SetMotorRequest.swift */; };
 		9FE5DA512AEDB1BD00493660 /* SetPwmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA502AEDB1BD00493660 /* SetPwmRequest.swift */; };
-		9FE5DA532AEDB1D600493660 /* CarControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA522AEDB1D600493660 /* CarControllable.swift */; };
-		9FE5DA552AEDB1F100493660 /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA542AEDB1F100493660 /* CarController.swift */; };
+		9FE5DA532AEDB1D600493660 /* RoverControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA522AEDB1D600493660 /* RoverControllable.swift */; };
+		9FE5DA552AEDB1F100493660 /* RoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA542AEDB1F100493660 /* RoverController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +69,7 @@
 		9F254AB92AF6CD6100DBC864 /* BaseUrlProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrlProvider.swift; sourceTree = "<group>"; };
 		9F773A7F2AE98AAF00145859 /* Esp32Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esp32Car.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F773A822AE98AAF00145859 /* Esp32CarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esp32CarApp.swift; sourceTree = "<group>"; };
-		9F773A842AE98AAF00145859 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F773A842AE98AAF00145859 /* RoverContolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverContolView.swift; sourceTree = "<group>"; };
 		9F773A882AE98AB000145859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F773A8B2AE98AB000145859 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F773A912AE98AB000145859 /* Esp32CarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esp32CarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,15 +78,34 @@
 		9F773A9F2AE98AB000145859 /* Esp32CarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esp32CarUITests.swift; sourceTree = "<group>"; };
 		9F773AA12AE98AB000145859 /* Esp32CarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esp32CarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F773AAE2AE98B9500145859 /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
-		9FE5DA442AE9949B00493660 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		9F84013C2B935BED00E959E8 /* DevicesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListView.swift; sourceTree = "<group>"; };
+		9F8401412B93623B00E959E8 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		9F8401432B93624E00E959E8 /* UrlSessionHttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionHttpManager.swift; sourceTree = "<group>"; };
+		9F8401452B93626A00E959E8 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		9F8401472B93628500E959E8 /* RequestBuilderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderError.swift; sourceTree = "<group>"; };
+		9F8401492B93629800E959E8 /* DefaultRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestBuilder.swift; sourceTree = "<group>"; };
+		9F84014C2B9362C300E959E8 /* HttpManager+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpManager+Additions.swift"; sourceTree = "<group>"; };
+		9F84014F2B93632700E959E8 /* EndpointConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointConvertible.swift; sourceTree = "<group>"; };
+		9F8401512B93634A00E959E8 /* EndpointConvertable+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointConvertable+Additions.swift"; sourceTree = "<group>"; };
+		9F8401542B93636E00E959E8 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		9F8401562B93638000E959E8 /* RequestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPath.swift; sourceTree = "<group>"; };
+		9F8401582B93639E00E959E8 /* HttpBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBody.swift; sourceTree = "<group>"; };
+		9F84015A2B9363B000E959E8 /* HttpHeaderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeaderValue.swift; sourceTree = "<group>"; };
+		9F84015C2B9363C100E959E8 /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
+		9F84015E2B93640900E959E8 /* RoverControlEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverControlEndpoint.swift; sourceTree = "<group>"; };
+		9F8401662B9364EE00E959E8 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		9F8401682B9364FF00E959E8 /* DeviceRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRepresentable.swift; sourceTree = "<group>"; };
+		9F84016A2B93650E00E959E8 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		9F84016C2B93654A00E959E8 /* DeviceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceItemView.swift; sourceTree = "<group>"; };
+		9FE5DA442AE9949B00493660 /* RoverControllViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverControllViewModel.swift; sourceTree = "<group>"; };
 		9FE5DA462AE9AA6E00493660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		9FE5DA482AEDB15600493660 /* CarMotorAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMotorAction.swift; sourceTree = "<group>"; };
-		9FE5DA4A2AEDB17000493660 /* CarMotor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMotor.swift; sourceTree = "<group>"; };
-		9FE5DA4C2AEDB18800493660 /* CarStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStatus.swift; sourceTree = "<group>"; };
+		9FE5DA482AEDB15600493660 /* RoverMotorAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverMotorAction.swift; sourceTree = "<group>"; };
+		9FE5DA4A2AEDB17000493660 /* RoverMotor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverMotor.swift; sourceTree = "<group>"; };
+		9FE5DA4C2AEDB18800493660 /* RoverStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverStatus.swift; sourceTree = "<group>"; };
 		9FE5DA4E2AEDB1AA00493660 /* SetMotorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMotorRequest.swift; sourceTree = "<group>"; };
 		9FE5DA502AEDB1BD00493660 /* SetPwmRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPwmRequest.swift; sourceTree = "<group>"; };
-		9FE5DA522AEDB1D600493660 /* CarControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarControllable.swift; sourceTree = "<group>"; };
-		9FE5DA542AEDB1F100493660 /* CarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarController.swift; sourceTree = "<group>"; };
+		9FE5DA522AEDB1D600493660 /* RoverControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverControllable.swift; sourceTree = "<group>"; };
+		9FE5DA542AEDB1F100493660 /* RoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,21 +156,14 @@
 		9F773A812AE98AAF00145859 /* Esp32Car */ = {
 			isa = PBXGroup;
 			children = (
+				9F8401642B9364C300E959E8 /* DevicesList */,
+				9F8401632B93649E00E959E8 /* Other */,
+				9F84014E2B9362E900E959E8 /* Provider */,
+				9F8401402B93621C00E959E8 /* Network */,
+				9F84013E2B93617700E959E8 /* Rover */,
 				9FE5DA462AE9AA6E00493660 /* Info.plist */,
 				9F773A822AE98AAF00145859 /* Esp32CarApp.swift */,
 				9F254AB62AF6C9AD00DBC864 /* Config.xcconfig */,
-				9F773A842AE98AAF00145859 /* ContentView.swift */,
-				9F254AB72AF6CAB500DBC864 /* ConfigProvider.swift */,
-				9FE5DA442AE9949B00493660 /* CarViewModel.swift */,
-				9F254AB92AF6CD6100DBC864 /* BaseUrlProvider.swift */,
-				9FE5DA542AEDB1F100493660 /* CarController.swift */,
-				9FE5DA522AEDB1D600493660 /* CarControllable.swift */,
-				9FE5DA502AEDB1BD00493660 /* SetPwmRequest.swift */,
-				9FE5DA4E2AEDB1AA00493660 /* SetMotorRequest.swift */,
-				9FE5DA4C2AEDB18800493660 /* CarStatus.swift */,
-				9FE5DA4A2AEDB17000493660 /* CarMotor.swift */,
-				9FE5DA482AEDB15600493660 /* CarMotorAction.swift */,
-				9F773AAE2AE98B9500145859 /* WebViewRepresentable.swift */,
 				9F773A882AE98AB000145859 /* Assets.xcassets */,
 				9F773A8A2AE98AB000145859 /* Preview Content */,
 			);
@@ -162,6 +193,120 @@
 				9F773AA12AE98AB000145859 /* Esp32CarUITestsLaunchTests.swift */,
 			);
 			path = Esp32CarUITests;
+			sourceTree = "<group>";
+		};
+		9F84013E2B93617700E959E8 /* Rover */ = {
+			isa = PBXGroup;
+			children = (
+				9F8401622B93648500E959E8 /* Model */,
+				9F8401612B93643C00E959E8 /* Logic */,
+				9F8401602B93643100E959E8 /* View */,
+				9F84013F2B9361D900E959E8 /* Protocols */,
+			);
+			path = Rover;
+			sourceTree = "<group>";
+		};
+		9F84013F2B9361D900E959E8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9FE5DA522AEDB1D600493660 /* RoverControllable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9F8401402B93621C00E959E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9F84014B2B9362A900E959E8 /* Extensions */,
+				9F8401412B93623B00E959E8 /* HttpManager.swift */,
+				9F8401432B93624E00E959E8 /* UrlSessionHttpManager.swift */,
+				9F8401542B93636E00E959E8 /* HttpMethod.swift */,
+				9F84015A2B9363B000E959E8 /* HttpHeaderValue.swift */,
+				9F84015C2B9363C100E959E8 /* HttpHeader.swift */,
+				9F8401582B93639E00E959E8 /* HttpBody.swift */,
+				9F8401562B93638000E959E8 /* RequestPath.swift */,
+				9F8401492B93629800E959E8 /* DefaultRequestBuilder.swift */,
+				9F84014F2B93632700E959E8 /* EndpointConvertible.swift */,
+				9F8401452B93626A00E959E8 /* RequestBuilder.swift */,
+				9F8401472B93628500E959E8 /* RequestBuilderError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9F84014B2B9362A900E959E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F84014C2B9362C300E959E8 /* HttpManager+Additions.swift */,
+				9F8401512B93634A00E959E8 /* EndpointConvertable+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9F84014E2B9362E900E959E8 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				9F254AB92AF6CD6100DBC864 /* BaseUrlProvider.swift */,
+				9F254AB72AF6CAB500DBC864 /* ConfigProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		9F8401602B93643100E959E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F773A842AE98AAF00145859 /* RoverContolView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F8401612B93643C00E959E8 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9FE5DA442AE9949B00493660 /* RoverControllViewModel.swift */,
+				9F84015E2B93640900E959E8 /* RoverControlEndpoint.swift */,
+				9FE5DA542AEDB1F100493660 /* RoverController.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		9F8401622B93648500E959E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FE5DA502AEDB1BD00493660 /* SetPwmRequest.swift */,
+				9FE5DA4E2AEDB1AA00493660 /* SetMotorRequest.swift */,
+				9FE5DA4C2AEDB18800493660 /* RoverStatus.swift */,
+				9FE5DA4A2AEDB17000493660 /* RoverMotor.swift */,
+				9FE5DA482AEDB15600493660 /* RoverMotorAction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F8401632B93649E00E959E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9F773AAE2AE98B9500145859 /* WebViewRepresentable.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9F8401642B9364C300E959E8 /* DevicesList */ = {
+			isa = PBXGroup;
+			children = (
+				9F8401652B9364E100E959E8 /* Model */,
+				9F84013C2B935BED00E959E8 /* DevicesListView.swift */,
+				9F84016C2B93654A00E959E8 /* DeviceItemView.swift */,
+			);
+			path = DevicesList;
+			sourceTree = "<group>";
+		};
+		9F8401652B9364E100E959E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F8401662B9364EE00E959E8 /* DeviceType.swift */,
+				9F84016A2B93650E00E959E8 /* Device.swift */,
+				9F8401682B9364FF00E959E8 /* DeviceRepresentable.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,18 +440,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F254AB82AF6CAB500DBC864 /* ConfigProvider.swift in Sources */,
-				9FE5DA492AEDB15600493660 /* CarMotorAction.swift in Sources */,
-				9F773A852AE98AAF00145859 /* ContentView.swift in Sources */,
-				9FE5DA4D2AEDB18800493660 /* CarStatus.swift in Sources */,
+				9FE5DA492AEDB15600493660 /* RoverMotorAction.swift in Sources */,
+				9F773A852AE98AAF00145859 /* RoverContolView.swift in Sources */,
+				9FE5DA4D2AEDB18800493660 /* RoverStatus.swift in Sources */,
+				9F84014A2B93629800E959E8 /* DefaultRequestBuilder.swift in Sources */,
+				9F84015F2B93640900E959E8 /* RoverControlEndpoint.swift in Sources */,
+				9F8401442B93624E00E959E8 /* UrlSessionHttpManager.swift in Sources */,
+				9F8401502B93632700E959E8 /* EndpointConvertible.swift in Sources */,
+				9F8401692B9364FF00E959E8 /* DeviceRepresentable.swift in Sources */,
+				9F84016D2B93654A00E959E8 /* DeviceItemView.swift in Sources */,
+				9F84013D2B935BED00E959E8 /* DevicesListView.swift in Sources */,
+				9F84015D2B9363C100E959E8 /* HttpHeader.swift in Sources */,
 				9F773AAF2AE98B9500145859 /* WebViewRepresentable.swift in Sources */,
+				9F8401422B93623B00E959E8 /* HttpManager.swift in Sources */,
 				9F773A832AE98AAF00145859 /* Esp32CarApp.swift in Sources */,
-				9FE5DA4B2AEDB17000493660 /* CarMotor.swift in Sources */,
+				9F8401592B93639E00E959E8 /* HttpBody.swift in Sources */,
+				9FE5DA4B2AEDB17000493660 /* RoverMotor.swift in Sources */,
 				9F254ABA2AF6CD6100DBC864 /* BaseUrlProvider.swift in Sources */,
+				9F84016B2B93650E00E959E8 /* Device.swift in Sources */,
+				9F84015B2B9363B000E959E8 /* HttpHeaderValue.swift in Sources */,
 				9FE5DA4F2AEDB1AA00493660 /* SetMotorRequest.swift in Sources */,
-				9FE5DA452AE9949B00493660 /* CarViewModel.swift in Sources */,
-				9FE5DA552AEDB1F100493660 /* CarController.swift in Sources */,
+				9F8401482B93628500E959E8 /* RequestBuilderError.swift in Sources */,
+				9FE5DA452AE9949B00493660 /* RoverControllViewModel.swift in Sources */,
+				9F8401672B9364EE00E959E8 /* DeviceType.swift in Sources */,
+				9FE5DA552AEDB1F100493660 /* RoverController.swift in Sources */,
+				9F8401552B93636E00E959E8 /* HttpMethod.swift in Sources */,
+				9F8401572B93638000E959E8 /* RequestPath.swift in Sources */,
 				9FE5DA512AEDB1BD00493660 /* SetPwmRequest.swift in Sources */,
-				9FE5DA532AEDB1D600493660 /* CarControllable.swift in Sources */,
+				9F8401522B93634A00E959E8 /* EndpointConvertable+Additions.swift in Sources */,
+				9FE5DA532AEDB1D600493660 /* RoverControllable.swift in Sources */,
+				9F8401462B93626A00E959E8 /* RequestBuilder.swift in Sources */,
+				9F84014D2B9362C300E959E8 /* HttpManager+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RoverContolView.swift
 //  Esp32Car
 //
 //  Created by Volodymyr Shyrochuk on 25.10.2023.
@@ -7,16 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RoverContolView: View {
     @StateObject 
-    private var viewModel = CarViewModel()
+    private var viewModel = RoverControllViewModel()
 
     var body: some View {
         VStack(spacing: 16) {
             ZStack {
                 WebViewRepresentable().edgesIgnoringSafeArea(.all)
-                // Your WebView here
-                
                 VStack(alignment: .leading) {
                             if let status = viewModel.carStatus {
                                 Spacer()
@@ -97,5 +95,5 @@ struct MotorControlButton: View {
 
 
 #Preview {
-    ContentView()
+    RoverContolView()
 }

@@ -1,5 +1,5 @@
 //
-//  CarStatus.swift
+//  RoverStatus.swift
 //  Esp32Car
 //
 //  Created by Volodymyr Shyrochuk on 29.10.2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CarStatus: Codable {
+struct RoverStatus: Codable {
     struct System: Codable {
             let upTime: Int
         }
@@ -15,8 +15,8 @@ struct CarStatus: Codable {
             let lastDistance: Double
         }
         struct Motor: Codable {
-            let lma: CarMotorAction
-            let rma: CarMotorAction
+            let lma: RoverMotorAction
+            let rma: RoverMotorAction
             let lmpwm: Int
             let rmpwm: Int
         }
@@ -26,7 +26,7 @@ struct CarStatus: Codable {
         let motor: Motor
 }
 
-extension CarStatus {
+extension RoverStatus {
     var motorsStatus: String {
         """
           L: \(motor.lma.shortDescription) : \(motor.lmpwm)
