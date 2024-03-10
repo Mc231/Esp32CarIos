@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RoverController: RoverControllable {
+class RoverHttpController: RoverControllable {
     
     private let httpManager: HttpManager
     
