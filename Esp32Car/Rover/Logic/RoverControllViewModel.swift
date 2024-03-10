@@ -13,17 +13,17 @@ class RoverControllViewModel: ObservableObject {
     @Published var carStatus: RoverStatus?
     @Published var speed: Double
     
-    private let carControllable: RoverControllable
+    private var carControllable: RoverControllable
     
     private var currentTask: Task<Void, Never>? = nil
     private var pwmTask: Task<Void, Never>? = nil
-    private var fetchTask: Task<Void, Never>? = nil
+ 
     
     init(speed: Double,
          carControllable: RoverControllable) {
         self.speed = speed
         self.carControllable = carControllable
-        handleStatus()
+        self.carControllable.onStatusUpdated = onStatusUpdated(_:)
     }
     
     convenience init(speed: Double = 127.5,
@@ -34,22 +34,12 @@ class RoverControllViewModel: ObservableObject {
             baseUrlProvider: baseUrlProvider,
             requestBuilder: requestBuilder,
             urlSession: urlSession)
-        let carController = RoverController(httpManager: httpManager)
+        let carController = RoverHttpController(httpManager: httpManager)
         self.init(speed: speed, carControllable: carController)
     }
     
-    private func handleStatus() {
-       // fetchTask?.cancel()
-        fetchTask = Task {
-            repeat {
-                do {
-                    carStatus = try await carControllable.fetchStatus()
-                    try await Task.sleep(for: .seconds(1))
-                } catch {
-                    print(error)
-                }
-            } while (!Task.isCancelled)
-        }
+    private func onStatusUpdated(_ status: RoverStatus) {
+        carStatus = status
     }
     
     // Methods for controlling the car
@@ -73,38 +63,6 @@ class RoverControllViewModel: ObservableObject {
         setMotor(request: .init(action: .stop, motor: .both))
     }
     
-//    func moveForward() {
-//        setMotor(request: .init(action: .bckward, motor: .both))
-//    }
-//    
-//    func moveLeft() {
-//        setMotor(request: .init(action: .bckward, motor: .right))
-//    }
-//    
-//    func moveRight() {
-//        setMotor(request: .init(action: .bckward, motor: .left))
-//    }
-//    
-//    func moveBackward() {
-//        setMotor(request: .init(action: .forward, motor: .both))
-//    }
-//    
-//    func stop() {
-//        setMotor(request: .init(action: .stop, motor: .both))
-//    }
-    
-    func updateStatus() {
-          Task {
-              do {
-                  let status = try await carControllable.fetchStatus()
-                  carStatus = status
-                  print("Updated status:", status)
-              } catch {
-                  print("Failed to fetch status:", error)
-              }
-          }
-      }
-    
     func setSpeed(value: Double) {
             pwmTask = Task {
                 do {
@@ -116,7 +74,6 @@ class RoverControllViewModel: ObservableObject {
     }
     
     private func setMotor(request: SetMotorRequest) {
-        //currentTask?.cancel()
         currentTask = Task {
             do {
                 try await carControllable.setMotor(setMotorRequest: request)

@@ -8,7 +8,9 @@
 import Foundation
 
 protocol RoverControllable {
+    var onStatusUpdated: (RoverStatus) -> Swift.Void { get set}
     func setMotor(setMotorRequest: SetMotorRequest) async throws
     func setPWM(setPwmRequest: SetPwmRequest) async throws
-    func fetchStatus() async throws -> RoverStatus
+    func startObservingStatusUpdate()
+    func stopObservingStatusUpdate()
 }

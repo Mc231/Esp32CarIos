@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9F254AB82AF6CAB500DBC864 /* ConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F254AB72AF6CAB500DBC864 /* ConfigProvider.swift */; };
 		9F254ABA2AF6CD6100DBC864 /* BaseUrlProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F254AB92AF6CD6100DBC864 /* BaseUrlProvider.swift */; };
+		9F5D80F12B9E3A2C00A95921 /* RoverWebSocketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D80F02B9E3A2C00A95921 /* RoverWebSocketController.swift */; };
+		9F5D80F52B9E3B4C00A95921 /* WebSocketManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D80F42B9E3B4C00A95921 /* WebSocketManagerProtocol.swift */; };
 		9F773A832AE98AAF00145859 /* Esp32CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773A822AE98AAF00145859 /* Esp32CarApp.swift */; };
 		9F773A852AE98AAF00145859 /* RoverContolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F773A842AE98AAF00145859 /* RoverContolView.swift */; };
 		9F773A892AE98AB000145859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F773A882AE98AB000145859 /* Assets.xcassets */; };
@@ -43,7 +45,7 @@
 		9FE5DA4F2AEDB1AA00493660 /* SetMotorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA4E2AEDB1AA00493660 /* SetMotorRequest.swift */; };
 		9FE5DA512AEDB1BD00493660 /* SetPwmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA502AEDB1BD00493660 /* SetPwmRequest.swift */; };
 		9FE5DA532AEDB1D600493660 /* RoverControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA522AEDB1D600493660 /* RoverControllable.swift */; };
-		9FE5DA552AEDB1F100493660 /* RoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA542AEDB1F100493660 /* RoverController.swift */; };
+		9FE5DA552AEDB1F100493660 /* RoverHttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5DA542AEDB1F100493660 /* RoverHttpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		9F254AB62AF6C9AD00DBC864 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		9F254AB72AF6CAB500DBC864 /* ConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigProvider.swift; sourceTree = "<group>"; };
 		9F254AB92AF6CD6100DBC864 /* BaseUrlProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrlProvider.swift; sourceTree = "<group>"; };
+		9F5D80F02B9E3A2C00A95921 /* RoverWebSocketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverWebSocketController.swift; sourceTree = "<group>"; };
+		9F5D80F42B9E3B4C00A95921 /* WebSocketManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManagerProtocol.swift; sourceTree = "<group>"; };
 		9F773A7F2AE98AAF00145859 /* Esp32Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esp32Car.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F773A822AE98AAF00145859 /* Esp32CarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esp32CarApp.swift; sourceTree = "<group>"; };
 		9F773A842AE98AAF00145859 /* RoverContolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverContolView.swift; sourceTree = "<group>"; };
@@ -105,7 +109,7 @@
 		9FE5DA4E2AEDB1AA00493660 /* SetMotorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMotorRequest.swift; sourceTree = "<group>"; };
 		9FE5DA502AEDB1BD00493660 /* SetPwmRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPwmRequest.swift; sourceTree = "<group>"; };
 		9FE5DA522AEDB1D600493660 /* RoverControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverControllable.swift; sourceTree = "<group>"; };
-		9FE5DA542AEDB1F100493660 /* RoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverController.swift; sourceTree = "<group>"; };
+		9FE5DA542AEDB1F100493660 /* RoverHttpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverHttpController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F5D80F22B9E3AFF00A95921 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				9F84014B2B9362A900E959E8 /* Extensions */,
+				9F8401412B93623B00E959E8 /* HttpManager.swift */,
+				9F8401432B93624E00E959E8 /* UrlSessionHttpManager.swift */,
+				9F8401542B93636E00E959E8 /* HttpMethod.swift */,
+				9F84015A2B9363B000E959E8 /* HttpHeaderValue.swift */,
+				9F84015C2B9363C100E959E8 /* HttpHeader.swift */,
+				9F8401582B93639E00E959E8 /* HttpBody.swift */,
+				9F8401562B93638000E959E8 /* RequestPath.swift */,
+				9F8401492B93629800E959E8 /* DefaultRequestBuilder.swift */,
+				9F84014F2B93632700E959E8 /* EndpointConvertible.swift */,
+				9F8401452B93626A00E959E8 /* RequestBuilder.swift */,
+				9F8401472B93628500E959E8 /* RequestBuilderError.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		9F5D80F32B9E3B0900A95921 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D80F42B9E3B4C00A95921 /* WebSocketManagerProtocol.swift */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
 		9F773A762AE98AAF00145859 = {
 			isa = PBXGroup;
 			children = (
@@ -217,18 +248,8 @@
 		9F8401402B93621C00E959E8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				9F84014B2B9362A900E959E8 /* Extensions */,
-				9F8401412B93623B00E959E8 /* HttpManager.swift */,
-				9F8401432B93624E00E959E8 /* UrlSessionHttpManager.swift */,
-				9F8401542B93636E00E959E8 /* HttpMethod.swift */,
-				9F84015A2B9363B000E959E8 /* HttpHeaderValue.swift */,
-				9F84015C2B9363C100E959E8 /* HttpHeader.swift */,
-				9F8401582B93639E00E959E8 /* HttpBody.swift */,
-				9F8401562B93638000E959E8 /* RequestPath.swift */,
-				9F8401492B93629800E959E8 /* DefaultRequestBuilder.swift */,
-				9F84014F2B93632700E959E8 /* EndpointConvertible.swift */,
-				9F8401452B93626A00E959E8 /* RequestBuilder.swift */,
-				9F8401472B93628500E959E8 /* RequestBuilderError.swift */,
+				9F5D80F32B9E3B0900A95921 /* WebSocket */,
+				9F5D80F22B9E3AFF00A95921 /* Http */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -264,7 +285,8 @@
 			children = (
 				9FE5DA442AE9949B00493660 /* RoverControllViewModel.swift */,
 				9F84015E2B93640900E959E8 /* RoverControlEndpoint.swift */,
-				9FE5DA542AEDB1F100493660 /* RoverController.swift */,
+				9FE5DA542AEDB1F100493660 /* RoverHttpController.swift */,
+				9F5D80F02B9E3A2C00A95921 /* RoverWebSocketController.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -450,6 +472,7 @@
 				9F8401692B9364FF00E959E8 /* DeviceRepresentable.swift in Sources */,
 				9F84016D2B93654A00E959E8 /* DeviceItemView.swift in Sources */,
 				9F84013D2B935BED00E959E8 /* DevicesListView.swift in Sources */,
+				9F5D80F52B9E3B4C00A95921 /* WebSocketManagerProtocol.swift in Sources */,
 				9F84015D2B9363C100E959E8 /* HttpHeader.swift in Sources */,
 				9F773AAF2AE98B9500145859 /* WebViewRepresentable.swift in Sources */,
 				9F8401422B93623B00E959E8 /* HttpManager.swift in Sources */,
@@ -463,13 +486,14 @@
 				9F8401482B93628500E959E8 /* RequestBuilderError.swift in Sources */,
 				9FE5DA452AE9949B00493660 /* RoverControllViewModel.swift in Sources */,
 				9F8401672B9364EE00E959E8 /* DeviceType.swift in Sources */,
-				9FE5DA552AEDB1F100493660 /* RoverController.swift in Sources */,
+				9FE5DA552AEDB1F100493660 /* RoverHttpController.swift in Sources */,
 				9F8401552B93636E00E959E8 /* HttpMethod.swift in Sources */,
 				9F8401572B93638000E959E8 /* RequestPath.swift in Sources */,
 				9FE5DA512AEDB1BD00493660 /* SetPwmRequest.swift in Sources */,
 				9F8401522B93634A00E959E8 /* EndpointConvertable+Additions.swift in Sources */,
 				9FE5DA532AEDB1D600493660 /* RoverControllable.swift in Sources */,
 				9F8401462B93626A00E959E8 /* RequestBuilder.swift in Sources */,
+				9F5D80F12B9E3A2C00A95921 /* RoverWebSocketController.swift in Sources */,
 				9F84014D2B9362C300E959E8 /* HttpManager+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
